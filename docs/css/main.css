@@ -1053,4 +1053,45 @@ textarea {
 }
 .menu-form.is-open {
   display: block;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .menu-button.is-open .icon-cross {
+    display: block;
+  }
+}
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.header {
+  position: relative;
+}
+
+.menu-form {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  height: 50px;
+  background-color: palegoldenrod;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 480px) {
+  .menu-form.is-open {
+    display: block;
+  }
+}
+@media screen and (min-width: 480px) {
+  .svg-icon {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
