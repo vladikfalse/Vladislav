@@ -451,19 +451,19 @@ body {
 }
 
 .img-instagram::after {
-  background-image: url("/docs/Photo/Ellipse 1.svg");
+  background-image: url("../Photo/Ellipse\ 1.svg");
 }
 
 .img-twitter::after {
-  background-image: url("/docs/Photo/Ellipse2.png");
+  background-image: url("../Photo/Ellipse2.png");
 }
 
 .img-facebook::after {
-  background-image: url("/docs/Photo/Ellipse3.svg");
+  background-image: url("../Photo/Ellipse3.svg");
 }
 
 .img-li::after {
-  background-image: url("/docs/Photo/Ellipse.svg");
+  background-image: url("../Photo/Ellipse.svg");
 }
 
 .img-instagram::before,
