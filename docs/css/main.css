@@ -1219,13 +1219,46 @@ textarea {
   text-align: left;
 }
 
-.menu-container {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 @media screen and (max-width: 480px) {
   body, html {
     overflow-x: hidden;
   }
+}
+.link-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 64px 0 16px 0;
+  gap: 20px;
+}
+
+.link-menu li {
+  position: relative;
+  padding-right: 16px;
+}
+
+.link-menu li::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 1px;
+  height: 16px;
+  background-color: #212121;
+}
+
+.link-menu li:last-child::after {
+  content: none;
+}
+
+.none-decoration {
+  text-decoration: none;
+  color: #2196F3;
 }/*# sourceMappingURL=main.css.map */
