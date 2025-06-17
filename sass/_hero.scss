@@ -12,3 +12,13 @@
   text-align: center;
   justify-content: center;
 }
+
+
+.logo-text-primary {
+  display: inline-block;
+  width: 150px; 
+}
+
+.logo-hidden {
+  visibility: hidden; /* логотип скрыт, но место занимает */
+}

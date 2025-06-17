@@ -451,19 +451,19 @@ body {
 }
 
 .img-instagram::after {
-  background-image: url("../Photo/Ellipse\ 1.svg");
+  background-image: url("/docs/Photo/Ellipse 1.svg");
 }
 
 .img-twitter::after {
-  background-image: url("../Photo/Ellipse2.png");
+  background-image: url("/docs/Photo/Ellipse2.png");
 }
 
 .img-facebook::after {
-  background-image: url("../Photo/Ellipse3.svg");
+  background-image: url("/docs/Photo/Ellipse3.svg");
 }
 
 .img-li::after {
-  background-image: url("../Photo/Ellipse.svg");
+  background-image: url("/docs/Photo/Ellipse.svg");
 }
 
 .img-instagram::before,
@@ -534,7 +534,7 @@ body {
   text-align: center;
   padding: 85px 0;
   margin: 0 0 94px;
-  background: radial-gradient(20% 20%, rgba(0, 0, 0, 0.4), rgba(2, 0, 0, 0.4)), url(Photo/img-studio.jpg);
+  background: radial-gradient(20% 20%, rgba(0, 0, 0, 0.4), rgba(2, 0, 0, 0.4)), url(/docs/Photo/img-studio.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -545,6 +545,15 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.logo-text-primary {
+  display: inline-block;
+  width: 150px;
+}
+
+.logo-hidden {
+  visibility: hidden; /* логотип скрыт, но место занимает */
 }
 
 .backdrop {
@@ -1055,6 +1064,32 @@ textarea {
   display: block;
 }
 
+@media screen and (max-width: 480px) {
+  .portfolio-list-hero {
+    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; /* Щоб центрувати */
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero-section-portfolio {
+    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; /* Щоб центрувати */
+    gap: 10px;
+  }
+}
 .menu-button .icon-cross {
   display: none;
 }
@@ -1100,13 +1135,12 @@ textarea {
   position: absolute;
   top: 100%;
   left: 0;
-  width: 100px;
+  width: 100%;
   background-color: rgb(255, 255, 255);
-  padding: 270px;
+  padding: 280px;
   padding-bottom: 100%;
   text-align: center;
   font-size: 20px;
-  border: 1px solid #ccc;
   overflow: scroll;
 }
 .menu-container.is-open {
@@ -1116,12 +1150,14 @@ textarea {
 .navigation {
   position: absolute;
   text-align: column;
-  top: 48px;
+  top: 0px;
   left: 40px;
 }
 
 .navigation-menu {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .navigation-menu-list, .navigation-menu-icon {
@@ -1147,4 +1183,49 @@ textarea {
   text-decoration: none;
   font-size: 40px;
   color: var(--primary-text-color);
+}
+
+.address-menu {
+  position: absolute;
+  top: 562px;
+  left: 40px;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  font-size: 15px;
+  padding: 0;
+}
+
+.address-text-menu {
+  font-size: 34px;
+  text-decoration: none;
+  color: #2196F3;
+}
+
+.address-menu-list {
+  list-style-type: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.address-number-menu {
+  font-size: 24px;
+  text-decoration: none;
+  color: #757575;
+  margin-top: 32px;
+  display: inline-block;
+  text-align: left;
+}
+
+.menu-container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (max-width: 480px) {
+  body, html {
+    overflow-x: hidden;
+  }
 }/*# sourceMappingURL=main.css.map */

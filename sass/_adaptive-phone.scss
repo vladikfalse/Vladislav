@@ -240,6 +240,29 @@ text-align: center;
     display: block;
   } 
 }
+@media screen and (max-width: 480px){
+.portfolio-list-hero{
+display: block;
+flex-direction: column;
+  align-items: center; /* Щоб центрувати */
+  gap: 10px;
+
+}
+}
+
+@media screen and (max-width: 480px){
+.hero-section-portfolio {
+display: block;
+flex-direction: column;
+  align-items: center; /* Щоб центрувати */
+  gap: 10px;
+
+}
+}
+
+
+
+
 
 
 
