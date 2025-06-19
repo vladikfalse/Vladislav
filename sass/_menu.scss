@@ -72,7 +72,7 @@ overflow: scroll;
 .navigation {
   position: absolute;
    text-align: column;
-  top: 0px;
+  top: 48px;
   left: 40px;
 }
 
@@ -110,7 +110,7 @@ overflow: scroll;
   top: 562px;
   left: 40px;
   width: 300px;
-  padding: 20px;
+  padding: 0px;
   text-align: center;
   font-size: 15px;
   padding: 0;
@@ -214,4 +214,32 @@ text-align: left;
 
 
 
+@media screen and (max-width: 480px) {
+  .menu-container {
+  position: fixed; /* или absolute, если не хотите фиксировать при скролле */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; /* занимает весь экран */
+  background-color: white; /* или ваш цвет фона */
+  z-index: 1; /* выше, чем всё остальное */
+  display: none; /* скрыто по умолчанию */
 
+}
+
+.menu-container.is-open {
+  display: block; /* показываем при открытии */
+} 
+ .svg-icon{
+  z-index: 2;
+ }
+
+  }
+ .container .main-nav {
+   z-index: 3;
+ }
+  
+
+ .navigation-menu-icon-current{
+  color: #2196F3;
+ }

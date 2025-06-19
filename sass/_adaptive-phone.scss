@@ -260,12 +260,15 @@ flex-direction: column;
 }
 }
 
+@media screen and (max-width: 480px){
+.buttonAll,.buttonWeb, .buttonApps, .buttonDesign, .buttonMarket{
+margin: 0;
+}
+}
+@media screen and (max-width: 480px){
+.buttonAll,.buttonWeb, .buttonApps, .buttonDesign{
+margin-bottom: 15px;
+margin-right: 8px;
+}
 
-
-
-
-
-
-
-
-
+}
