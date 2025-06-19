@@ -216,20 +216,19 @@ text-align: left;
 
 @media screen and (max-width: 480px) {
   .menu-container {
-  position: fixed; /* или absolute, если не хотите фиксировать при скролле */
+  position: fixed; 
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh; /* занимает весь экран */
-  background-color: white; /* или ваш цвет фона */
-  z-index: 1; /* выше, чем всё остальное */
-  display: none; /* скрыто по умолчанию */
+  height: 100vh; 
+  background-color: white; 
+  z-index: 1; 
+  display: none; 
 
 }
 
 .menu-container.is-open {
-  display: block; /* показываем при открытии */
-} 
+  display: block; 
  .svg-icon{
   z-index: 2;
  }
