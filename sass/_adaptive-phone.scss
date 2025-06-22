@@ -2,14 +2,14 @@
 .main-list {
  display: flex;
   flex-direction: column;
-  align-items: center; /* Щоб центрувати */
+  align-items: center; 
   gap: 10px;
 
 }
 }
 @media screen and (max-width: 480px){
 .main-list-h2, .main-list-p{
-    font-size: 14px; /* Зменшуємо розмір шрифту */
+    font-size: 14px; 
     margin-right: 0; /* Видаляємо відступ справа */
     text-align: center; /* Центруємо текст */
     margin-bottom: 10px; /* Додаємо відступ знизу для кращого вигляду */

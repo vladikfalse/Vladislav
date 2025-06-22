@@ -834,13 +834,13 @@ textarea {
             flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; /* Щоб центрувати */
+            align-items: center;
     gap: 10px;
   }
 }
 @media screen and (max-width: 480px) {
   .main-list-h2, .main-list-p {
-    font-size: 14px; /* Зменшуємо розмір шрифту */
+    font-size: 14px;
     margin-right: 0; /* Видаляємо відступ справа */
     text-align: center; /* Центруємо текст */
     margin-bottom: 10px; /* Додаємо відступ знизу для кращого вигляду */
@@ -1266,5 +1266,79 @@ textarea {
 @media screen and (max-width: 480px) {
   html, body {
     overflow-x: hidden;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .container {
+    max-width: 708px;
+    padding: 0;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .main-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main-list li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 354px;
+            flex: 0 0 354px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-list li:nth-child(odd) {
+    margin-right: 30px;
+  }
+  .main-list li:nth-child(even) {
+    margin-right: 0;
+  }
+  .main-list-img {
+    width: 354px;
+    height: 120px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: 0 0 10px 0;
+  }
+  .main-list-h2,
+  .main-list-p {
+    text-align: center;
+    margin: 0 0 10px 0;
+  }
+  .What-We-Do {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .container {
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }/*# sourceMappingURL=main.css.map */
