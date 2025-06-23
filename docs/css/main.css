@@ -1351,11 +1351,37 @@ textarea {
 }
 @media screen and (min-width: 768px) and (max-width: 900px) {
   .logo-text-primary {
-    margin-bottom: 13px;
+    margin-bottom: 0px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 900px) {
   .nav-contact {
     margin-right: 96px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .Team-Section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  .text-decoration-none {
+    text-align: center;
+    background-color: #f8f8f8;
+  }
+  .fonts-img img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (max-width: 768px) {
+  .Team-Section {
+    grid-template-columns: 1fr;
   }
 }/*# sourceMappingURL=main.css.map */
