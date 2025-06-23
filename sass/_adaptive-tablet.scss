@@ -63,3 +63,33 @@
     padding-right: 15px;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .nav-list, .address-text{
+ margin: 0px;
+
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+ .address{
+  flex-wrap: wrap;
+
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+ .logo-text-primary{
+ margin-bottom: 13px;
+
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+ .nav-contact{
+margin-right: 96px;
+
+}
+}
+
+
