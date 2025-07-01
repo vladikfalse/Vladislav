@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -93,6 +93,56 @@ body {
 
 .nav-list .iteam:last-child {
   margin-right: 0;
+}
+
+.product-sumb::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 155, 243, 0.9);
+  opacity: 0;
+  -webkit-transition-property: var(--color-background-team);
+  transition-property: var(--color-background-team);
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  z-index: 1;
+}
+
+.product-sumb:hover::before {
+  opacity: 1;
+}
+
+.product-sumb .hover-text {
+  position: absolute;
+  color: white;
+  opacity: 0;
+  z-index: 2;
+  top: 50%;
+  left: 40%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.hover-text:hover::before {
+  opacity: 1;
+  -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+}
+
+.product-sumb:hover .hover-text {
+  opacity: 1;
+}
+
+.hover-text-p {
+  font-size: 18px;
+  color: #fff;
+  text-align: left;
+  opacity: 0.9;
 }
 
 .portfolio-list-hero {
