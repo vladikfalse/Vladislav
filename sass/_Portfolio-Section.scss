@@ -60,6 +60,7 @@
   gap: 30px;
   max-width: 100%;
   padding: 0;
+  
 }
 
 .portfolio-list-item {
@@ -67,6 +68,7 @@
   flex: 1 1 calc(33.333% - 20px);
   box-sizing: border-box;
   border: 1px solid var(--color-border-port);
+  margin-bottom: ;
 }
 
 .portfolio-list-item-link {
@@ -111,7 +113,9 @@
   margin-right: 30px;
 }
 
-
+.portfolio-list-hero{
+   margin: 20px !important;
+}
 
 
 
