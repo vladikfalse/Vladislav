@@ -95,6 +95,16 @@ body {
   margin-right: 0;
 }
 
+.portfolio-list-hero {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1230px;
+}
+
 .product-sumb::before {
   content: "";
   display: inline-block;
@@ -209,6 +219,10 @@ body {
 
 .product-sumb:hover::before {
   opacity: 1;
+}
+
+.address-text {
+  margin-right: 30px;
 }
 
 .footer-section {

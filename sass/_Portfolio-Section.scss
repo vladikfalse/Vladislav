@@ -1,9 +1,9 @@
-// .portfolio-list-hero {
-//   list-style-type: none;
-//   display: flex;
-//   flex-wrap: wrap;
-//   width: 1230px;
-// }
+.portfolio-list-hero {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1230px;
+}
 
 // .portfolio-list-item {
 //   margin-right: 30px;
@@ -140,3 +140,6 @@
   opacity: 1;
 }
 
+.address-text{
+  margin-right: 30px;
+}
